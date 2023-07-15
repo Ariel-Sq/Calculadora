@@ -14,10 +14,10 @@ body {
     border-radius: 10px;
 }
 
-.pantalla {
+.pantalla-input {
     background-color: #ccc;
     color: black;
-    width: 298px;
+    width: 288px;
     height: 60px;
     margin-bottom: 15px;
     display: flex;
@@ -27,6 +27,11 @@ body {
     font-size: 50px;
     padding-right: 5px;
 }
+
+  #pantalla-input {
+    background-color: transparent;
+    color: black;
+  }
   
   .fila {
     display: flex;
