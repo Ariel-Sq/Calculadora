@@ -88,10 +88,23 @@ const buttons = [
   },
 ];
 
-// buttons.forEach((button) =)
+function actualizarDisplay(valor) {
+  // Concatenar el valor del botón al contenido actual del display
+  display.value += valor;
+}
 
-const btn1 = document.getElementById("boton-1");
+// Recorrer el array de botones y agregar evento clic a cada botón
+buttons.forEach((boton) => {
+  const elementoBoton = document.getElementById(boton.id);
+
+  // Agregar evento clic a cada botón
+  elementoBoton.addEventListener("click", () => {
+    actualizarDisplay(boton.value); // Llamar a la función para actualizar el display
+  });
+});
+
+/* const btn1 = document.getElementById("boton-1");
 console.log(display);
 btn1.addEventListener("click", () => {
   display.value += 1;
-});
+}); */
